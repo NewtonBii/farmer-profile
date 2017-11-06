@@ -5,6 +5,6 @@ $("#toggle").click(function(event){
 });
 
 $("#x-button").click(function(){
-  $(".sidebar").slideUp(1000);
-  $("#toggle").show(500);
+  $(".sidebar").slideUp(500);
+  $("#toggle").show(1000);
 });
