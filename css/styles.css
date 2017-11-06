@@ -12,22 +12,23 @@ background-size: cover;
 .sidebar {
 position: absolute;
 z-index: 2;
-width: 20%;
+width: 15%;
 background-color: #154360;
 height: 100%;
 opacity: 0.8;
 font-size: 20px;
 color: white;
 display: none;
-left: 50px;
+left: 10px;
 }
-
+#x-button{
+cursor: pointer;
+}
 .list-items1 {
 margin-top: 20px;
 }
-
-.contact-details {
-
+.contact-details a:hover {
+width: 50px;
 }
 
 .jumbotron {
