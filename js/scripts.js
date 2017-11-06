@@ -1,4 +1,4 @@
 $("#toggle").click(function(event){
   event.preventDefault();
-  $(".sidebar").fadeToggle(500);
+  $(".sidebar").fadeToggle(1000);
 });
