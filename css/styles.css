@@ -2,13 +2,10 @@
 background-image: url("../img/headerBG2.jpg");
 }
 #buyer-page-container-fluid{
-background-color: #154360;
+background-image: url("../img/headerBG2.jpg");
 }
-#body-buyer-page{
-  background-image: url("../img/headerBG1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
+#whole-page{
+background-color: #154360;
 }
 .container#heading {
 opacity: 1;
@@ -25,6 +22,7 @@ opacity: 0.8;
 font-size: 20px;
 color: white;
 display: none;
+position: absolute;
 }
 #log-in:hover{
   background-color: #154360;
@@ -70,19 +68,24 @@ background-color: white;
   margin-left: 94%;
   margin-top: -51%;
   z-index: 20;
+  position: absolute;
 }
 #x-button{
-cursor: pointer;
-color: #154360;
+  cursor: pointer;
+  color: #154360;
 }
 .list-items1 {
-text-align: right;
-font-size: 25px;
-
+  text-align: right;
+  font-size: 25px;
 }
-
+#jumbotron-buyer-page{
+  background-color: white;
+  opacity: 1;
+  height: 200px;
+  margin-right: 29px;
+}
 .jumbotron {
-opacity: 0.7;
+  opacity: 0.7;
 }
 .list-items1:hover span{
   width: 100%;
@@ -117,4 +120,59 @@ opacity: 0.7;
   background:white;
   display:block;
   margin-bottom:5px;
+}
+#cereals-buyer-page-well{
+  background-image: url("../img/cerealsBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 29px;
+}
+#vegetables-buyer-page-well{
+  background-image: url("../img/vegetablesBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+#fruits-buyer-page-well{
+  background-image: url("../img/fruitsBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+#tubers-buyer-page-well{
+  background-image: url("../img/tubersBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+#body-buyer{
+  text-align: center;
+}
+#cereals-buyer-page-container{
+  background-color: white;
+  opacity: 0.7;
+  width: 100%;
+}
+#vegetables-buyer-page-container{
+  background-color: white;
+  opacity: 0.7;
+  width: 100%;
+}
+#fruits-buyer-page-container{
+  background-color: white;
+  opacity: 0.7;
+  width: 100%;
+}
+#tubers-buyer-page-container{
+  background-color: white;
+  opacity: 0.7;
+  width: 100%;
 }
