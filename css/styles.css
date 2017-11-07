@@ -1,7 +1,15 @@
-.container-fluid {
+#landing-page-container-fluid{
 background-image: url("../img/headerBG2.jpg");
 }
-
+#buyer-page-container-fluid{
+background-color: #154360;
+}
+#body-buyer-page{
+  background-image: url("../img/headerBG1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
 .container#heading {
 opacity: 1;
 background-repeat: no-repeat;
@@ -49,7 +57,7 @@ background-color: white;
   height: 30px;
   cursor: pointer;
 }
-#body{
+#body-landing-page{
   background-color: white;
   opacity: 0.5;
   margin-bottom: 20px;
