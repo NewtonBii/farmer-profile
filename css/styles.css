@@ -1,28 +1,71 @@
 .container-fluid {
-background-color: #154360;
+background-image: url("../img/headerBG2.jpg");
 }
 
 .container#heading {
-background-image: url("../img/headerBG2.jpg");
-opacity: 0.8;
+opacity: 1;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
-.sidebar {
+#sidebar1 {
 position: absolute;
 z-index: 2;
 width: 20%;
-background-color: #154360;
-height: 100%;
+background-color:white;
 opacity: 0.8;
 font-size: 20px;
 color: white;
 display: none;
-left: 0px;
+}
+#log-in:hover{
+  background-color: #154360;
+  opacity: 0.8;
+}
+.contact-details{
+  align-items: center;
+}
+.button-landing{
+  font-size: 20px;
+  color: white;
+  padding:10%;
+}
+#button1{
+  -webkit-transition-duration: 4s;
+  transition-duration: 4s;
+}
+#button1:hover{
+background-color: white;
+}
+
+#sidebar2 img{
+  -webkit-transition: all 20s ease;
+     -moz-transition: all 20s ease;
+      -ms-transition: all 20s ease;
+          transition: all 20s ease;
+}
+#sidebar2 img:hover{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#body{
+  background-color: white;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+#sidebar2{
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  opacity: 0.9;
+  margin-left: 94%;
+  margin-top: -51%;
+  z-index: 20;
 }
 #x-button{
 cursor: pointer;
+color: #154360;
 }
 .list-items1 {
 text-align: right;
@@ -31,7 +74,7 @@ font-size: 25px;
 }
 
 .jumbotron {
-opacity: 0.5;
+opacity: 0.7;
 }
 .list-items1:hover span{
   width: 100%;
