@@ -9,9 +9,12 @@
   position: absolute;
   width: 70%;
   height: 70%;
-  background: -webkit-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
   margin-left: 200px;
   margin-top: 50px;
+  background-color: #154360;
+  z-index: 20;
+  opacity: 0.9;
+  display: none;
 }
 
 .cont_centrar {
@@ -86,11 +89,9 @@
 
 .cont_img_back_grey>img {
   width: 100%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.9;
   animation-name: animar_fondo;
-  animation-duration: 20s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -105,9 +106,9 @@
 
 .cont_img_back_>img {
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.8;
   animation-name: animar_fondo;
-  animation-duration: 20s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -115,11 +116,12 @@
 
 .cont_forms_active_login>.cont_img_back_ {
   top: 0px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0.5;
 }
 
 .cont_forms_active_sign_up>.cont_img_back_ {
@@ -130,6 +132,7 @@
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  opacity: 0.5;
 }
 
 .cont_info_log_sign_up {
@@ -188,10 +191,6 @@
   color: #fff;
 }
 
-/* ----------------------------------
-background text
-------------------------------------
- */
 
 .cont_ba_opcitiy {
   position: relative;
