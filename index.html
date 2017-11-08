@@ -1,96 +1,158 @@
 <!DOCTYPE html>
-<html>
-
+<html >
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>FARMER PROFILES</title>
+  <meta charset="UTF-8">
+  <title>Farmer Profile</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-  <div class="cotn_principal">
-    <div class="cont_centrar">
-      <div class="cont_login">
-        <div class="cont_info_log_sign_up">
-          <div class="col_md_login">
-            <div class="cont_ba_opcitiy">
-              <h2>LOGIN</h2>
-              <button class="btn_login" onclick="login()">LOGIN</button>
+  <div class="Wrapper" ng-app="myApp">
+    <div class="Sidebar" ng-class="boolie ? 'is-collapsed' : ''">
+        <header class="Sidebar-header">
+            <div class="Sidebar-logo"></div>
+        </header>
+        <nav role="navigation">
+            <ul>
+                <li class="Sidebar-navItem">
+                    <i class="Sidebar-menuIcon fa fa-bar-chart"></i>
+                    <a href="">Your Produce Views</a>
+                </li>
+                <li class="Sidebar-navItem">
+                    <i class="Sidebar-menuIcon fa fa-shopping-cart"></i>
+                    <a href="#">Star Rating</a>
+                </li>
+                <li class="Sidebar-navItem">
+                    <i class="Sidebar-menuIcon fa fa-cog"></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li class="Sidebar-navItem">
+                    <i class="Sidebar-menuIcon fa fa-question-circle"></i>
+                    <a href="#">Add New Produce</a>
+                </li>                
+                <li class="Sidebar-navItem">
+                    <i class="Sidebar-menuIcon fa fa-sign-out"></i>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="Sidebar-footer" ng-click="boolie = !boolie">
+            <i class="Sidebar-toggleArrow Sidebar-menuIcon fa fa-arrow-left" ng-class="boolie ? 'rotate' : ''"></i>
+            <span class="Sidebar-toggleText">Minimize menu</span>
+        </footer>
+    </div>
+    <div class="Main">
+         <body>
+      <h1>SELLER PRODUCE UPLOAD FORM.</h1>
+   <div class="info"><a href="https://www.grandvincent-marion.fr" target="_blank"><p> <i class="fa fa-heart"></i> </p></a></div>
+  
+  <form>
+        <h1>PLEASE FILL IN THE DETAILS FOR YOUR PRODUCE TO BE PUBLISHED :</h1>
+        
+    <div class="contentform">
+        <div id="sendmessage"> Your produce has been uploaded successfully.</div>
+
+
+        <div class="leftcontact">
+                  <div class="form-group">
+                    <p>Produce Name<span>*</span></p>
+                    <span class="icon-case"><i class="fa fa-male"></i></span>
+                        <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p>Produce Category <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-user"></i></span>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+             <option selected>Select </option>
+            <option value="1">Fruits</option>
+            <option value="2">Vegetables</option>
+            <option value="3">Cereals</option>
+            <option value="3">Roots and Tubers</option>
+            </select>
+                <div class="validation"></div>
             </div>
-          </div>
-          <div class="col_md_sign_up">
-            <div class="cont_ba_opcitiy">
-              <h2>SIGN UP</h2>
-              <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+            <div class="form-group">
+            <p>Quantity <span>*</span></p>    
+            <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                <input type="phone" name="phone" id="email" data-rule="phone" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                <div class="validation"></div>
+            </div>  
+
+            <div class="form-group">
+            <p>Location <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-home"></i></span>
+                <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                <div class="validation"></div>
             </div>
-          </div>
-        </div>
 
-        <div class="cont_back_info">
-          <div class="cont_img_back_grey">
-            <img src="img/headerBG2.jpg" alt="" />
-          </div>
+            <div class="form-group">
+            <p>Produce Image <span>*</span></p>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+            </div>  
 
-        </div>
-        <div class="cont_forms">
-          <div class="cont_img_back_">
-            <img src="img/fruitsBg.jpg" alt="" />
-          </div>
-          <div class="cont_form_login">
-            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-            <h2>LOGIN</h2>
-            <input type="email" placeholder="Email" value="email" />
-            <input type="password" placeholder="Password" />
-            <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
-          </div>
 
-          <div class="cont_form_sign_up">
-            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-            <h2>SIGN UP</h2>
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="User" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Confirm Password" />
-            <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
-          </div>
 
-        </div>
-
-      </div>
     </div>
-  </div>
-  <div class="container-fluid" id="landing-page-container-fluid">
-    <div class="container" id="heading">
-      <div class="jumbotron">
-        <img src="img/logo.png" style="width:270px; margin-left:800px;height:200px">
-      </div>
+
+    <div class="rightcontact">  
+
+            <div class="form-group">
+            <p>Town <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                <div class="validation"></div>
+            </div>  
+
+            <div class="form-group">
+            <p>Phone number <span>*</span></p>  
+            <span class="icon-case"><i class="fa fa-phone"></i></span>
+                <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+            <p>Harvest Status <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-info"></i></span>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+             <option selected>Select </option>
+            <option value="1">Ready</option>
+            <option value="2">Ready in a week</option>
+            <option value="3">Ready in Two Weeks</option>
+            <option value="3">Ready in a Month</option>
+            </select>
+                <div class="validation"></div>
+            </div>
+            <div class="form-group">
+            <p>Price <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+            </div>
+
+              
     </div>
-    <div class="container" id="body-landing-page">
-      <h4 style="text-align:center; margin-top:5%;font-weight:bolder; font-size:30px">ARE YOU BUYING OR SELLING?</h4>
-      <div class="button-landing">
-        <button type="click" name="buyer" style="width:400px; height:80px;background-color:#154360" id="button1">BUYER</button>
-        <button type="click" name="seller" style="width:400px; height:80px;background-color:#154360" id="button2">SELLER</button>
-      </div>
     </div>
-    <div class="well" id="foot-well" style="opacity:0.8">
-      <h6 style="font-size:15px; font-weight:bolder; text-align:center">&#169;Copyright 2017. FarmBook Inc. Terms & Conditions Apply</h6>
-    </div>
-  </div>
-  <div class="sidebar" id="sidebar2">
-    <a href="https://www.facebook.com/newton.bii.9"><img src="img/facebook.png" id="facebook" style="margin-top:10px;margin-left:4px"></a>
-    <a href="https://twitter.com/BiiNewton"><img src="img/twitter.png" id="twitter" style="margin-top:10px;margin-left:4px"></a>
-    <a href="https://www.linkedin.com/in/newton-kipng-eno-bii-maritim-b7458475"><img src="img/linkedin.png" id="linkedin" style="margin-top:10px;margin-left:4px"></a>
-    <a href="https://www.instagram.com/biinewton/?hl=en"><img src="img/instagram.png" id="instagram" style="margin-top:10px;margin-left:4px"></a>
-    <a href="https://plus.google.com/u/0/+NewtonBii"><img src="img/google-plus.png" id="google-plus" style="margin-top:10px;margin-left:4px;margin-bottom:10px"></a>
-  </div>
+<button type="submit" class="bouton-contact">PUBLISH</button>
+    
+</form> 
+
+  
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="js/index.js" charset="utf-8"></script>
-<script src="js/scripts.js" charset="utf-8"></script>
+    </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 
+    <script  src="js/index.js"></script>
 
+</body>
 </html>
