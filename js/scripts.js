@@ -12,6 +12,10 @@ $(".close").click(function(event){
   $(".cotn_principal").slideUp(500);
 });
 
+$("#button2").click(function(event){
+  $(".cotn_principal").show(1000);
+});
+
 
 
 // lewis js
