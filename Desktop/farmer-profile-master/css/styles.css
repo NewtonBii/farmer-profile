@@ -6,3 +6,309 @@ background-size: cover;
 width: 100% ;
 	color: #f2528f;
 }
+
+html { height: 100% }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+body { background-image: radial-gradient( cover, rgba(92,100,111,1) 0%,rgba(31,35,40,1) 100%), url('http://i.minus.com/io97fW9I0NqJq.png') }
+.login {
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 327px;
+  margin: 20px auto 0;
+  width: 298px;
+}
+.login h1 {
+  background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+  border-bottom: 1px solid #a6abaf;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  color: #727678;
+  display: block;
+  height: 63px;
+  font: 600 14px/1 'Open Sans', sans-serif;
+  padding-top: 14px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 #fff;
+}
+input[type="password"], input[type="text"] {
+  background: url('http://i.minus.com/ibhqW9Buanohx2.png') center left no-repeat, linear-gradient(top, #d6d7d7, #dee0e0);
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+.show-password {
+  display: block;
+  height: 16px;
+  margin: 26px 0 0 28px;
+  width: 87px;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 16px;
+  opacity: 0;
+  position: relative;
+  width: 64px;
+}
+input[type="checkbox"]:checked {
+  left: 29px;
+  width: 58px;
+}
+.toggle {
+  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
+  display: block;
+  height: 16px;
+  margin-top: -20px;
+  width: 87px;
+  z-index: -1;
+}
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+.forgot {
+  color: #7f7f7f;
+  display: inline-block;
+  float: right;
+  font: 12px/1 sans-serif;
+  left: -19px;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  transition: color .4s;
+}
+.forgot:hover { color: #3b3b3b }
+input[type="submit"] {
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background-color: #37a69b;
+  background-image: linear-gradient(top,#3db0a6,#3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+input[type="submit"]:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+h4{
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+label{
+  font-weight: 300;
+}
+
+button{
+  display: inline-block;
+  vertical-align: top;
+  padding: .4em .8em;
+  margin: 0;
+  background: lime;
+  border: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+.controls{
+  background: #333;
+  padding: 2%;
+}
+
+fieldset{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1em 0 0;
+  background: #666;
+  padding: .5em;
+  border-radius: 3px;
+}
+
+.checkbox{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.checkbox input[type="checkbox"]{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox label{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.checkbox label:before,
+.checkbox label:after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.checkbox label:before{
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.checkbox label:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #68b8c4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkbox input:checked ~ label:after{
+  opacity: 1;
+}
+
+.checkbox input:focus ~ label:before{
+  background: #eee;
+}
+
+/**
+ * Container/Target Styles
+ */
+
+.container{
+  padding: 2%;
+  min-height: 400px;
+  text-align: justify;
+  position: relative;
+}
+
+.container .mix,
+.container .gap{
+  width: 100px;
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.container .mix{
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  background: white;
+  display: none;
+}
+
+.container .mix.green{
+  background: #a6e6a7;
+}
+
+.container .mix.blue{
+  background: #6bd2e8;
+}
+
+.container .mix.circle{
+  border-radius: 999px;
+}
+
+.container .mix.triangle{
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #68b8c4;
+  border-left-color: #68b8c4;
+}
+
+.container .mix.sm{
+  width: 50px;
+  height: 50px;
+}
+
+/**
+ * Fail message styles
+ */
+
+.container .fail-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  transition: 150ms;
+}
+
+.container .fail-message:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.container .fail-message span{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container.fail .fail-message{
+  opacity: 1;
+  pointer-events: auto;
+}
