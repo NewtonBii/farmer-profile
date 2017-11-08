@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sellerstyles.css">
+    <title>FARMER PROFILES</title>
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="container" id="sellers">
+      <h2>SIGN UP HERE FOR YOUR PRODUCE TO POSTED </h2>
+          <div class="container">
+        <form>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+          <label for="validationDefault01">First Name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+    </div>
+    <div class="col-md-6 mb-3">
+          <label for="validationDefault02">Last Name</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+        <label for="validationDefault03">Locality</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Location" required>
+      <div class="invalid-feedback">
+        Please provide a valid Town.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+          <label for="validationDefault04">County</label>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="County" required>
+      <div class="invalid-feedback">
+        Please provide a valid County.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Postal Code:</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+      <div class="invalid-feedback">
+        Please provide a valid Postal Code.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Phone Number:</label>
+        <input type="text" class="form-control" id="validationDefault06" placeholder="Phone Number" value="" required>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Produce Name:</label>
+        <input type="text" class="form-control" id="validationDefault07" placeholder="Produce Names" value="" required>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Produce Price:</label>
+        <input type="text" class="form-control" id="validationDefault07" placeholder="Produce Price" value="" required>
+    </div>
+    <div class="col-md-6 mb-3">
+        <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> Select Picture to upload</label> <br><input type="image" src="/wp-content/uploads/sendform.png" alt="Upload" width="100">
+    </div>
+  <div class="col-md-6 mb-3">
+          <label class="mr-sm-2" for="inlineFormCustomSelectPref">Produce category:</label>
+      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+      <option selected>Select Your Category</option>
+            <option value="1">Fruits</option>
+            <option value="2">Vegetables</option>
+            <option value="3">Cereals</option>
+            <option value="3">Roots and Tubers</option>
+  </select>
+</div>
+  <div>
+  <button class="btn btn-primary" type="submit">Sign Up</button>
+</div>
+</form>
+</div>
+    </div>
+  </div>
+  <div class="container">
+
+      <div class="login">
+      <label>Login In /Sign-Up Form </label><br>
+  <input type="text" placeholder="Username" id="username">
+  <input type="password" placeholder="password" id="password">
+  <a href="#" class="forgot">forgot password?</a>
+  <input type="submit" value="Sign In">
+    <input type="submit" value="Sign Up">
+</div>
+<div class="shadow"></div>
+</div>
+  <div class="container" id="filter">
+    <form class="controls" id="Filters">
+
+      <fieldset>
+        <h4>CATEGORY</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".cereals" />
+          <label>CEREALS</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".fruits" />
+          <label>FRUITS</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".vegetables" />
+          <label>VEGETABLES</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".tubers" />
+          <label>ROOT AND TUBERS</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>LOCATION</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".nairobi" />
+          <label>NAIROBI</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".mombasa" />
+          <label>MOMBASA</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".kisumu" />
+          <label>KISUMU</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".eldoret" />
+          <label>ELDORET</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".nakuru" />
+          <label>NAKURU</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".kitale" />
+          <label>KITALE</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>PRICE</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".sm" />
+          <label>kSH.1 - 100</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>kSH.101 - 1000</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>kSH.1001 - 10000</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>kSH.10001 - 100000</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h4>HARVEST PERIOD</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".sm" />
+          <label>READY</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>THREE DAYS</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>ONE WEEK</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>ONE MONTH</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h4>CUSTOMER RATING</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".sm" />
+          <label>5 STAR</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>4 STAR</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>THREE STAR </label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg" />
+          <label>ONE STAR</label>
+        </div>
+      </fieldset>
+
+      <button id="Reset">Filters Products</button>
+    </form>
+
+    <div id="Container" class="container">
+      <div class="fail-message"><span>No items were found matching the selected filters</span></div>
+
+      <div class="mix triangle white lrg"></div>
+      <div class="mix square white sm"></div>
+      <div class="mix circle green lrg"></div>
+      <div class="mix triangle blue lrg"></div>
+      <div class="mix square white lrg"></div>
+      <div class="mix circle blue sm"></div>
+      <div class="mix triangle green lrg"></div>
+      <div class="mix square blue lrg"></div>
+      <div class="mix circle white lrg"></div>
+
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+
+  </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+</html>
