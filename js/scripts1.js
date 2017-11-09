@@ -13,6 +13,19 @@ function toggle_visibility1() {
     e.style.display = 'none';
 }
 
+function toggle_visibility2() {
+  var e = document.getElementById("graph");
+  if (e.style.display == 'none')
+    e.style.display = 'block';
+  else
+    e.style.display = 'none';
+}
+
+$(".bouton-contact").click(function(event){
+  $("#form-upload-produce").fadeOut(5000);
+  $("#successfull-submit-box").show(1000).fadeOut(2000)
+});
+
 $(document).ready(function() {
 
   var speed = 5000;
