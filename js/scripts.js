@@ -1,6 +1,6 @@
-$("#button1").click(function(event) {
+$("#button2").click(function(event) {
   event.preventDefault();
-  $(".cotn_principal").slideDown(1000);
+  $(".cotn_principal").show(1000);
   $("#google-plus").show(100);
   $("#instagram").show(300);
   $("#linkedin").show(500);
@@ -12,11 +12,13 @@ $(".close").click(function(event){
   $(".cotn_principal").slideUp(500);
 });
 
-$("#button2").click(function(event){
-  $(".cotn_principal").show(1000);
-});
-
-
+function toggle_visibility() {
+       var e = document.getElementById("form-upload-produce");
+       if(e.style.display == 'none')
+          e.style.display = 'block';
+       else
+          e.style.display = 'none';
+    }
 
 // lewis js
 
