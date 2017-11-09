@@ -264,6 +264,7 @@
 
 #body-buyer {
   text-align: center;
+      margin-top: 241px;
 }
 
 #cereals-buyer-page-container {
@@ -383,4 +384,9 @@ h1 {
 .checked {
     color: orange;
       margin-top: -33px;
+}
+.affix {
+
+    width: 1071px;
+      z-index: 22;
 }

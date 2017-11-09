@@ -25,6 +25,8 @@ function cambiar_sign_up(at) {
     document.querySelector('.cont_form_login').style.display = "none";
   }, 400);
 
+  //location
+
 }
 
 
