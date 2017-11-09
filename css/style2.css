@@ -9,7 +9,7 @@ body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background: #e1e1e1;
+  background: #212121;
 }
 ul {
   list-style: none;
@@ -46,6 +46,7 @@ a {
     width: 100%;
     height:100%;
     margin-left: -2%;
+    margin-top: 1%;
 
 }
 .Sidebar.is-collapsed {
@@ -322,7 +323,16 @@ textarea {
   overflow: hidden;
   clear: both;
 }
-
+#form-upload-produce{
+    height: 171%;
+    display: block;
+    width: 738px;
+    z-index: 20;
+    position: absolute;
+    right: 209px;
+    top: -1px;
+}
+}
 .icon-case {
   width: 35px;
   float: left;
