@@ -1,78 +1,80 @@
 function toggle_visibility() {
-       var e = document.getElementById("form-upload-produce");
-       if(e.style.display == 'none')
-          e.style.display = 'block';
-       else
-          e.style.display = 'none';
-    }
-    $(document).ready(function () {
-        //rotation speed and timer
-        var speed = 5000;
+  var e = document.getElementById("form-upload-produce");
+  if (e.style.display == 'none')
+    e.style.display = 'block';
+  else
+    e.style.display = 'none';
+}
+function toggle_visibility1() {
+  var e = document.getElementById("carousel");
+  if (e.style.display == 'none')
+    e.style.display = 'block';
+  else
+    e.style.display = 'none';
+}
 
-        var run = setInterval(rotate, speed);
-        var slides = $('.slide');
-        var container = $('#slides ul');
-        var elm = container.find(':first-child').prop("tagName");
-        var item_width = container.width();
-        var previous = 'prev'; //id of previous button
-        var next = 'next'; //id of next button
-        slides.width(item_width); //set the slides to the correct pixel width
-        container.parent().width(item_width);
-        container.width(slides.length * item_width); //set the slides container to the correct total width
+$(document).ready(function() {
+
+  var speed = 5000;
+
+  var run = setInterval(rotate, speed);
+  var slides = $('.slide');
+  var container = $('#slides ul');
+  var elm = container.find(':first-child').prop("tagName");
+  var item_width = container.width();
+  var previous = 'prev';
+  var next = 'next';
+  slides.width(item_width);
+  container.parent().width(item_width);
+  container.width(slides.length * item_width);
+  container.find(elm + ':first').before(container.find(elm + ':last'));
+  resetSlides();
+
+  $('#buttons a').click(function(e) {
+    if (container.is(':animated')) {
+      return false;
+    }
+    if (e.target.id == previous) {
+      container.stop().animate({
+        'left': 0
+      }, 1500, function() {
         container.find(elm + ':first').before(container.find(elm + ':last'));
         resetSlides();
-
-
-        //if user clicked on prev button
-
-        $('#buttons a').click(function (e) {
-            //slide the item
-
-            if (container.is(':animated')) {
-                return false;
-            }
-            if (e.target.id == previous) {
-                container.stop().animate({
-                    'left': 0
-                }, 1500, function () {
-                    container.find(elm + ':first').before(container.find(elm + ':last'));
-                    resetSlides();
-                });
-            }
-
-            if (e.target.id == next) {
-                container.stop().animate({
-                    'left': item_width * -2
-                }, 1500, function () {
-                    container.find(elm + ':last').after(container.find(elm + ':first'));
-                    resetSlides();
-                });
-            }
-
-            //cancel the link behavior
-            return false;
-
-        });
-
-        //if mouse hover, pause the auto rotation, otherwise rotate it
-        container.parent().mouseenter(function () {
-            clearInterval(run);
-        }).mouseleave(function () {
-            run = setInterval(rotate, speed);
-        });
-
-
-        function resetSlides() {
-            //and adjust the container so current is in the frame
-            container.css({
-                'left': -1 * item_width
-            });
-        }
-
-    });
-    //a simple function to click next link
-    //a timer will call this function, and the rotation will begin
-
-    function rotate() {
-        $('#next').click();
+      });
     }
+
+    if (e.target.id == next) {
+      container.stop().animate({
+        'left': item_width * -2
+      }, 1500, function() {
+        container.find(elm + ':last').after(container.find(elm + ':first'));
+        resetSlides();
+      });
+    }
+
+
+    return false;
+
+  });
+
+
+  container.parent().mouseenter(function() {
+    clearInterval(run);
+  }).mouseleave(function() {
+    run = setInterval(rotate, speed);
+  });
+
+
+  function resetSlides() {
+
+    container.css({
+      'left': -1 * item_width
+    });
+  }
+
+});
+
+
+function rotate() {
+  $('#next').click();
+}
