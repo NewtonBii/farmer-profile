@@ -559,3 +559,7 @@ height: 30px;
 display: table;
 width: 100%;
 }
+.graph{
+      margin-left: 166px;
+      display: none;
+}

@@ -127,3 +127,14 @@ $(':radio').change(
     $('.choice').text( this.value + ' stars' );
   }
 )
+
+
+function toggle(){
+  var a = getElementById('produce');
+  if(a.style.display="none")
+    a.style.display="block";
+
+    else {
+      a.style.display="none";
+    }
+}
