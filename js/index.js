@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+var app = angular.module('myApp', []);
+=======
 function login() {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";
   document.querySelector('.cont_form_login').style.display = "block";
@@ -42,3 +45,6 @@ function ocultar_login_sign_up() {
   }, 500);
 
 }
+
+var app = angular.module('myApp',[]);
+>>>>>>> 73c45f738d7de22c9e7ab35d8b04c23cba035d24
