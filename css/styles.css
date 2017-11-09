@@ -1,5 +1,5 @@
 #landing-page-container-fluid {
-  background-image: url("../img/headerBG2.jpg");
+  background-image: url("../img/headerG2.jpg");
 }
 
 #whole-page {
@@ -383,4 +383,9 @@ h1 {
 .checked {
     color: orange;
       margin-top: -33px;
+}
+.affix {
+  
+    width: 1071px;
+      z-index: 22;
 }
