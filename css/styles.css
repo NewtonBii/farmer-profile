@@ -288,7 +288,7 @@
   background-color: white;
   opacity: 0.9;
   width: 100%;
-  >>>>>>>d7c3f1482689cc01623d5de6b97d986f790dfa21
+
 }
 /*
 lewis css*/
@@ -356,7 +356,11 @@ h1 {
       text-align: left;
       box-shadow: 10px 10px 5px #000000;
 }
-
+.box1:hover {
+    background-color: yellow;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
 #maize{
       height: 271px;
 }

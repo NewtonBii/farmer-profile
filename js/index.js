@@ -42,3 +42,5 @@ function ocultar_login_sign_up() {
   }, 500);
 
 }
+
+var app = angular.module('myApp',[]);
