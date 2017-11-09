@@ -239,7 +239,11 @@ form h1 {
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
   margin: auto;
+<<<<<<< HEAD
   text-shadow: none; 
+=======
+  text-shadow: none;
+>>>>>>> 73c45f738d7de22c9e7ab35d8b04c23cba035d24
   text-align:left
 }
 
@@ -264,7 +268,11 @@ p {
 }
 
 h1 {
+<<<<<<< HEAD
   text-align:center; 
+=======
+  text-align:center;
+>>>>>>> 73c45f738d7de22c9e7ab35d8b04c23cba035d24
   color: #666;
   text-shadow: 1px 1px 0px #FFF;
   margin:50px 0px 0px 0px
@@ -289,7 +297,11 @@ textarea {
   border: 1px solid #EEE;
   margin: 0;
   width: 75%;
+<<<<<<< HEAD
   height: 130px; 
+=======
+  height: 130px;
+>>>>>>> 73c45f738d7de22c9e7ab35d8b04c23cba035d24
   float: left;
   padding: 0px 15px;
 }
@@ -332,7 +344,11 @@ i {
 }
 
 .leftcontact {
+<<<<<<< HEAD
   width:49.5%; 
+=======
+  width:49.5%;
+>>>>>>> 73c45f738d7de22c9e7ab35d8b04c23cba035d24
   float:left;
   border-right: 1px dotted #CCC;
   box-sizing: border-box;
