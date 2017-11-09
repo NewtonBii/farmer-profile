@@ -372,3 +372,7 @@ i {
 #sendmessage.show,.show  {
   display:block;
 }
+.graph{
+      margin-left: 166px;
+      display: none;
+}
