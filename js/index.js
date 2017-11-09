@@ -24,7 +24,6 @@ function cambiar_sign_up(at) {
   setTimeout(function() {
     document.querySelector('.cont_form_login').style.display = "none";
   }, 400);
-window.location.assign("buyer.html");
 
 }
 
@@ -44,3 +43,7 @@ function ocultar_login_sign_up() {
 }
 
 var app = angular.module('myApp',[]);
+
+function login2() {
+  window.location.assign('buyer.html')
+}

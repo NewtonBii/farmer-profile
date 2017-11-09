@@ -1,6 +1,6 @@
-$("#button1").click(function(event) {
+$("#button2").click(function(event) {
   event.preventDefault();
-  $(".cotn_principal").slideDown(1000);
+  $(".cotn_principal").show(1000);
   $("#google-plus").show(100);
   $("#instagram").show(300);
   $("#linkedin").show(500);
@@ -11,11 +11,6 @@ $("#button1").click(function(event) {
 $(".close").click(function(event){
   $(".cotn_principal").slideUp(500);
 });
-
-$("#button2").click(function(event){
-  $(".cotn_principal").show(1000);
-});
-
 
 
 // lewis js
@@ -132,3 +127,14 @@ $(':radio').change(
     $('.choice').text( this.value + ' stars' );
   }
 )
+
+
+function toggle(){
+  var a = getElementById('produce');
+  if(a.style.display="none")
+    a.style.display="block";
+
+    else {
+      a.style.display="none";
+    }
+}
