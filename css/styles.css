@@ -264,6 +264,7 @@
 
 #body-buyer {
   text-align: center;
+      margin-top: 241px;
 }
 
 #cereals-buyer-page-container {
@@ -385,7 +386,7 @@ h1 {
       margin-top: -33px;
 }
 .affix {
-  
+
     width: 1071px;
       z-index: 22;
 }
