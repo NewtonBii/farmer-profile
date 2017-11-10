@@ -52,6 +52,7 @@ a {
   height: 100%;
   margin-left: -2%;
   margin-top: 1%;
+  background-size: cover;
 }
 
 .Sidebar.is-collapsed {
@@ -457,7 +458,7 @@ margin:0 auto;
 opacity: 15;
 background-color: white;
 left: 346px;
-    bottom: 175px;
+  
 }
 
 #slides {
