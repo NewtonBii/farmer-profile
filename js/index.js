@@ -29,6 +29,15 @@ function cambiar_sign_up(at) {
 
 }
 
+function loadPage() {
+  window.location.assign('buyer.html')
+}
+
+$("#submit-button").click(function(event) {
+$(".subscribed").show(500);
+$(".form-container front").hide(1000)
+});
+
 
 
 function ocultar_login_sign_up() {

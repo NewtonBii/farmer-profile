@@ -1,6 +1,4 @@
-body{
-  background: #ecf0f1;
-}
+
 
 .form-container {
   background: #288CF0;
@@ -10,8 +8,8 @@ body{
   margin-bottom: 40px;
   margin: 2rem auto;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: white;
   text-align: center;
-  position: relative;
 }
 
 .form-label {
@@ -84,7 +82,7 @@ body{
 .button {
   background: #FFF;
   border-radius: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: '  Roboto', sans-serif;
   color: #288CF0;
   font-weight: bold;
   letter-spacing: 1px;
@@ -297,7 +295,7 @@ $table-header-border: 1px solid #FFF;
       &:nth-child(2) { // show the second table header but replace the content with the data-th from the markup for mobile
         display: table-cell;
         span {display:none;}
-        &:after {content:attr(data-th);}
+        &:after {content:attr(data-th);
       }
       @media (min-width: $breakpoint) {
         &:nth-child(2) { // hide the data-th and show the normal header for tablet and desktop

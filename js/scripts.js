@@ -12,14 +12,7 @@ $(".close").click(function(event){
   $(".cotn_principal").slideUp(500);
 });
 
-function loadPage() {
-  window.location.assign('buyer.html')
-}
 
-$("#submit-button").click(function(event) {
-$(".subscribed").show(500);
-$(".form-container front").hide(1000)
-});
 // lewis js
 
 
@@ -127,6 +120,9 @@ $('.multi-item-carousels .item').each(function(){
   }
 });
 
+function showContacts() {
+  document.getElementById('form-container front').show(1500);
+}
 
 //collasable menu
 $(':radio').change(
