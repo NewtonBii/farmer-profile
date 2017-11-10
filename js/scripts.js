@@ -141,3 +141,7 @@ function toggle(){
       a.style.display="none";
     }
 }
+
+function loadPage(){
+  window.location.replace('buyer.html')
+}
