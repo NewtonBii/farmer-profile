@@ -1,6 +1,6 @@
 #landing-page-container-fluid {
   background-image: url("../img/headerBG2.jpg");
-  background-size: cover;
+height: 100vh;
 }
 
 #whole-page {
