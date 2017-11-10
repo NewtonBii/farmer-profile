@@ -15,7 +15,7 @@ function toggle_visibility1() {
 }
 
 function toggle_visibility2() {
-  var e = document.getElementById("graph");
+  var e = document.getElementById("table");
   if (e.style.display == 'none')
     e.style.display = 'block';
   else
